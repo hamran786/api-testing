@@ -35,7 +35,7 @@ class _DetailsUsersState extends State<Details> {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return Center(child: CircularProgressIndicator());
               } else if (snapshot.hasData) {
-                return Column(
+                return Column(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Center(
                       child: Image(
